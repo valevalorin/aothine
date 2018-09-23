@@ -1,0 +1,21 @@
+.low-shadow {
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(4, 58, 78, 0.3);
+  -moz-box-shadow:    0px 2px 3px 0px rgba(4, 58, 78, 0.3);
+  box-shadow:         0px 2px 3px 0px rgba(4, 58, 78, 0.3);
+}
+
+.med-shadow {
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(4, 58, 78, 0.3);
+  -moz-box-shadow:    0px 3px 4px 0px rgba(4, 58, 78, 0.3);
+  box-shadow:         0px 3px 4px 0px rgba(4, 58, 78, 0.3);
+}
+
+.high-shadow {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(4, 58, 78, 0.3);
+  -moz-box-shadow:    0px 5px 5px 0px rgba(4, 58, 78, 0.3);
+  box-shadow:         0px 5px 5px 0px rgba(4, 58, 78, 0.3);
+}
+
+.float-left {
+  float:left;
+}

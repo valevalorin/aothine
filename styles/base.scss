@@ -66,11 +66,84 @@ html {
         // background-color:white;
         background-color:$greyish;
         font-size:1.5rem;
+        transform: translate(0, 0);
         
         .items-wrapper {
           // text-align:center;
+          display:flex;
           padding:4px;
           border-bottom:2px solid $light-blue;
+
+          .dot-wrapper {
+            margin-right:12px;
+          }
+
+          a {
+            $corner-major:16px;
+            $corner-minor:2px;
+            $spacing:2px;
+            $corner-p:20%;
+
+            // white-space: nowrap;
+            display:flex;
+            margin-right:12px;
+
+            div {
+              display:inline-block;
+              padding:0px;
+              margin:0px;
+            }
+
+            .vertical-wrapper {
+              display:flex;
+              flex-direction:column;
+            }
+
+            .top-bar, .bottom-bar, .left-bar, .right-bar {
+              transition:opacity 0.2s ease-out;
+              opacity:0.0;
+              display:inline-block;
+              background-color:$light-blue;
+            }
+
+            .top-bar {
+              height:$corner-minor;
+              width:$corner-p;
+              margin-bottom:$spacing;
+              margin-left:-6px;
+            }
+
+            .bottom-bar {
+              height:$corner-minor;
+              width:$corner-p;
+              margin-top:$spacing;
+              align-self:flex-end;
+              margin-right:-6px;
+
+            }
+
+            .left-bar {
+              height:$corner-p;
+              width:$corner-minor;
+              margin-right:6px;
+            }
+
+            .right-bar {
+              height:$corner-p;
+              width:$corner-minor;
+              align-self:flex-end;
+              margin-left:6px;
+            }
+          }
+
+          a:hover {
+            // text-decoration:underline;
+
+            .top-bar, .bottom-bar, .left-bar, .right-bar {
+              // visibility:visible;
+              opacity:1.0;
+            }
+          }
         }
       }
     }
@@ -78,6 +151,7 @@ html {
     .dot-wrapper {
       display:inline-block;
       padding:4px;
+      padding-right:2px;
       .dot {
         display:inline-block;
         background-color:$light-blue;

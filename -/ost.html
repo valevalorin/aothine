@@ -1,18 +1,53 @@
 ---
 layout: base
 ---
+<link rel="stylesheet" href="/styles/ost.css"/>
 <h3>¥ OSt
   <span class="less">
     - A Context Aware Music Player
   </span>
-  <br/>
-  <!-- <span class="less">
-    <a class="less" href="https://github.com/valevalorin/ost">Github Repo</a>
-  </span> -->
 </h3>
 <p>
   This project aims to be the soundtrack to your OS - to make navigating your desktop environment feel like an adventure through a virtual world.
 </p>
 <p>
-  OSt allows you to pair your audio tracks to the processes running on your computer. When switching to a new window/program/process OSt will seamlessly transition to the track that is paired to the new process.
+  Simply put, when you change windows, OSt changes what you're listening to. OSt allows you to pair audio tracks to the processes running on your computer. When switching to a new window/program/process OSt will seamlessly transition to the track that is paired to the new process.
+</p>
+<h3>¥ Features</h3>
+<p>
+  <ul>
+    <li>Assign multiple tracks to individual processes.</li>
+    <li>Variety of playback modes:</li>
+    <li class="indent-1">Loop - loop the track until proceses switch with configurable loop start/end points.</li>
+    <li class="indent-1">Variety - randomly play tracks assigned to process but don't repeat tracks until all have played.</li>
+    <li class="indent-1">Random - randomly play tracks assinged to process with repeats possible.</li>
+    <li>Multi-Platform - currently supported in Windows 7+ and OSX</li>
+    <li>Extensibility</li>
+    <li class="indent-1">The primary OSt component runs as a small http server on your computer allowing for a variety of front-ends to monitor your context. Possible future front-ends include:</li>
+    <li class="indent-2">Changing tracks based on what tab you have open in your IDE.</li>
+    <li class="indent-2">Changing tracks based on what tab you have focused in your web browser.</li>
+  </ul>
+</p>
+<h3>¥ Releases</h3>
+<p>
+  Ready to run packages are available for download below.<br/>
+  <span class="releases">
+    <a href="/releases/ost/windows">Windows</a> - 
+    <a href="/releases/ost/osx">OSX</a>
+  </span><br/><br/>
+  Be sure to check out the repos below for instructions on how to configure your player.
+</p>
+<h3>¥ Repos</h3>
+<p>
+  <ul>
+    <li>
+      <a class="releases" href="https://github.com/valevalorin/ost">Windows Package</a>
+    </li>
+    <li>
+      <a class="releases" href="https://github.com/valevalorin/ost-osx">OSX Package</a>
+    </li>
+    <li>
+      <a class="releases" href="https://github.com/valevalorin/ost-sound-agent">Core Component</a>
+    </li>
+  </ul>
 </p>

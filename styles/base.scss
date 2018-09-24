@@ -38,6 +38,10 @@
     100% {transform: translate(0px, 0px);}
 }
 
+* {
+  box-sizing:border-box;
+}
+
 html {
   height:100vh;
   width:100vw;
@@ -66,6 +70,35 @@ html {
         padding-bottom:12px;
         text-align:center;
         color:$dark-blue;
+
+        div {
+          display:inline-block;
+        }
+
+        .pre {
+          width:8px;
+          height:3rem;
+          border-top:8px solid $dark-blue;
+          margin-right:16px;
+        }
+
+        div.center {
+          .bottom-bar {
+            width:20%;
+            height:4px;
+            background-color:$dark-blue;
+            float:right;
+            margin-right:-12px;
+          }
+        }
+
+        .post {
+          width:4px;
+          height:1.5rem;
+          background-color:$dark-blue;
+          vertical-align:bottom;
+          margin-left:12px
+        }
       }
 
       div.navigation {
@@ -171,6 +204,10 @@ html {
         height:4px;
         width:4px;
       }
+    }
+
+    #boopPlayer, #dinkPlayer {
+      display:none;
     }
   }
 }
